@@ -1,6 +1,6 @@
 const navItems = [
-    "home",
-    "o blogu",
+    "blog",
     "o mnie",
     "kontakt"
 ]
+export default navItems;

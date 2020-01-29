@@ -34,12 +34,18 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
-        <footer>
+        <main style={{minHeight: "calc(100vh - 170px)"}}>{children}</main>
+        <footer style={{
+      backgroundImage: `linear-gradient(to left, turquoise, navy)`,
+      width: "100vw",
+      margin: "10px 0 0 0",
+      height: 50,
+      display: `flex`,
+      flexDirection: `row`,
+      alignItems: `center`,
+      justifyContent: `space-around`}}>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
